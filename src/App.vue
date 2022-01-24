@@ -2,7 +2,7 @@
   <div>
     <the-header />
     <the-catalog />
-    <the-footer />>
+    <the-footer />
   </div>
 </template>
 
