@@ -1,10 +1,10 @@
 <template>
     <article class="products__item">
         <div class="products__img">
-            <img class="products__img-card" src="img/fe-card-1.jpg" alt="product">
+            <img class="products__img-card" :src="require('@/assets/img/fe-card-1.jpg')" alt="product">
             <div class="products__overlay">
                 <button class="products__btn">
-                    <img class="products__icon-cart" src="img/icon-cart.svg" alt="icon-cart">Add to Cart
+                    <img class="products__icon-cart" :src="require('@/assets/img/icon-cart.svg')" alt="icon-cart">Add to Cart
                 </button>
             </div>
         </div>
@@ -25,5 +25,6 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+
 </style>
