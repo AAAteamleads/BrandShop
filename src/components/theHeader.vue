@@ -1,7 +1,7 @@
 <template>
           <header class="header">
          <nav class="header__menu-content">
-            <img class="header__close" src="img/close.svg" alt="close">
+            <img class="header__close" :src="require('@/assets/img/close.svg')" alt="close">
             <p class="header__title">MENU</p>
             <ul class="header__menu-list">
                <li class="header__sub-title">MAN</li>
@@ -33,10 +33,10 @@
                <div class="header__topline">
                   <div class="header__topline-left">
                      <a class="logo" href="index.html">
-                        <img class="header__logo" src="img/logo.svg" alt="logo">
+                        <img class="header__logo" :src="require('@/assets/img/logo.svg')" alt="logo">
                      </a>
                      <button class="header__search-btn">
-                        <img class="header__search-img" src="img/search.svg" alt="search"></button>
+                        <img class="header__search-img" :src="require('@/assets/img/search.svg')" alt="search"></button>
                      <form class="header__search" action="form">
                         <input class="header__search-field" type="search" placeholder="Search....">
                      </form>
@@ -48,10 +48,10 @@
                         <span class="header__menu-line"></span>
                      </button>
                      <a class="header__topline-right-link" href="registration.html">
-                        <img class="header__topline-img" src="img/social.svg" alt="social">
+                        <img class="header__topline-img" :src="require('@/assets/img/social.svg')" alt="social">
                      </a>
                      <a class="header__topline-right-link" href="cart.html">
-                        <img src="img/cart.svg" alt="cart" class="cart">
+                        <img :src="require('@/assets/img/cart.svg')" alt="cart" class="cart">
                         <div class="header__topline-right-count">0</div>
                      </a>
                   </div>

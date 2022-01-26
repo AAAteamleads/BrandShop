@@ -4,7 +4,7 @@
          <div class="white-overlay"></div>
          <div class="footer__items container">
             <figure class="footer__item">
-               <img src="img/intersect.png" alt="sub-img">
+               <img :src="require('@/assets/img/intersect.png')" alt="sub-img">
                <figcaption>
                   <p class="footer__quote">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a pulvinar
                         purus
@@ -33,22 +33,22 @@
                      <ul class="bottom-line__socials-icons">
                         <li class="bottom-line__item">
                            <a class="bottom-line__social-link" href="#">
-                              <i class="bottom-line__icon fab fa-facebook-f"></i>
+                              <fa :icon="['fab', 'facebook']" class="bottom-line__icon" />
                            </a>
                         </li>
                         <li class="bottom-line__item">
                            <a class="bottom-line__social-link" href="#">
-                              <i class="bottom-line__icon fab fa-instagram"></i>
+                              <fa :icon="['fab', 'instagram']" class="bottom-line__icon" />
                            </a>
                         </li>
                         <li class="bottom-line__item">
                            <a class="bottom-line__social-link" href="#">
-                              <i class="bottom-line__icon fab fa-pinterest-p"></i>
+                              <fa :icon="['fab', 'pinterest-p']" class="bottom-line__icon" />
                            </a>
                         </li>
                         <li class="bottom-line__item">
                            <a class="bottom-line__social-link" href="#">
-                              <i class="bottom-line__icon fab fa-twitter"></i>
+                              <fa :icon="['fab', 'twitter']" class="bottom-line__icon" />
                            </a>
                         </li>
                      </ul>
