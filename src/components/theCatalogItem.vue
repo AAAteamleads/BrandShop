@@ -16,15 +16,66 @@
                 Kym Ellery teams up
                 with Moda Operandi.</p>
             <span class="products__price">$52.00</span>
+            <button @click="createProductItem"> New create</button>
+            <button @click="queryProductItem"> Query create</button>
+            <div v-for="item in productItem" :key="item.id">
+                {{item.product_name}}
+            </div>
         </div>
     </article>
+    
+
+    
+    
 </template>
 
 <script>
+
+
+import { DataStore } from '@aws-amplify/datastore';
+import { ProductItem } from '../models';
+
+
+
 export default {
+    data:(()=>({
+        productItem:[]
+    })),
+    methods:{
+        async createProductItem() {
+
+            await DataStore.save(
+                new ProductItem({
+                    "product_name": "Lorem ipsum dolor sit amet",
+                    "cost": 123.45,
+                    "description": "Lorem ipsum dolor sit amet",
+                    "genderID": "a3f4095e-39de-43d2-baf4-f8c16f0f6f4d",
+                    "sizes": []
+                })
+            );
+
+
+        },
+
+        async queryProductItem() {
+
+            const models = await DataStore.query(ProductItem);
+            this.productItem =models;
+            console.log(models);  
+        }
+    }
 }
+            
+    
+    
+
+
 </script>
 
 <style lang="scss" scoped>
-
+button{
+    background-color: rgb(97, 65, 65);
+    width: 100px;
+    height: 100px;
+}
 </style>

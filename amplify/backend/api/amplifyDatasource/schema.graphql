@@ -1,0 +1,20 @@
+type Size @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  size_title: String
+  ProductItems: [ProductItem] @manyToMany(relationName: "SizeProductItem")
+}
+
+type Gender @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  title: String
+  ProductItems: [ProductItem] @hasMany(indexName: "byGender", fields: ["id"])
+}
+
+type ProductItem @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  product_name: String
+  cost: Float
+  description: String
+  genderID: ID! @index(name: "byGender")
+  sizes: [Size] @manyToMany(relationName: "SizeProductItem")
+}
