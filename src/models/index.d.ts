@@ -23,7 +23,7 @@ type SizeProductItemMetaData = {
 export declare class Size {
   readonly id: string;
   readonly size_title?: string;
-  readonly ProductItems?: (SizeProductItem | null)[];
+  readonly ProductItemsSize?: (SizeProductItem | null)[];
   readonly createdAt?: string;
   readonly updatedAt?: string;
   constructor(init: ModelInit<Size, SizeMetaData>);
@@ -33,10 +33,10 @@ export declare class Size {
 export declare class ProductItem {
   readonly id: string;
   readonly product_name?: string;
-  readonly cost?: number;
   readonly description?: string;
-  readonly genderID: string;
+  readonly cost?: number;
   readonly sizes?: (SizeProductItem | null)[];
+  readonly genderID: string;
   readonly createdAt?: string;
   readonly updatedAt?: string;
   constructor(init: ModelInit<ProductItem, ProductItemMetaData>);
@@ -45,8 +45,8 @@ export declare class ProductItem {
 
 export declare class Gender {
   readonly id: string;
-  readonly title?: string;
-  readonly ProductItems?: (ProductItem | null)[];
+  readonly gender_title?: string;
+  readonly ProductItemsGender?: (ProductItem | null)[];
   readonly createdAt?: string;
   readonly updatedAt?: string;
   constructor(init: ModelInit<Gender, GenderMetaData>);

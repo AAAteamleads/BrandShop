@@ -17,8 +17,8 @@ export const schema = {
                     "isRequired": false,
                     "attributes": []
                 },
-                "ProductItems": {
-                    "name": "ProductItems",
+                "ProductItemsSize": {
+                    "name": "ProductItemsSize",
                     "isArray": true,
                     "type": {
                         "model": "SizeProductItem"
@@ -90,13 +90,6 @@ export const schema = {
                     "isRequired": false,
                     "attributes": []
                 },
-                "cost": {
-                    "name": "cost",
-                    "isArray": false,
-                    "type": "Float",
-                    "isRequired": false,
-                    "attributes": []
-                },
                 "description": {
                     "name": "description",
                     "isArray": false,
@@ -104,11 +97,11 @@ export const schema = {
                     "isRequired": false,
                     "attributes": []
                 },
-                "genderID": {
-                    "name": "genderID",
+                "cost": {
+                    "name": "cost",
                     "isArray": false,
-                    "type": "ID",
-                    "isRequired": true,
+                    "type": "Float",
+                    "isRequired": false,
                     "attributes": []
                 },
                 "sizes": {
@@ -124,6 +117,13 @@ export const schema = {
                         "connectionType": "HAS_MANY",
                         "associatedWith": "productItem"
                     }
+                },
+                "genderID": {
+                    "name": "genderID",
+                    "isArray": false,
+                    "type": "ID",
+                    "isRequired": true,
+                    "attributes": []
                 },
                 "createdAt": {
                     "name": "createdAt",
@@ -186,15 +186,15 @@ export const schema = {
                     "isRequired": true,
                     "attributes": []
                 },
-                "title": {
-                    "name": "title",
+                "gender_title": {
+                    "name": "gender_title",
                     "isArray": false,
                     "type": "String",
                     "isRequired": false,
                     "attributes": []
                 },
-                "ProductItems": {
-                    "name": "ProductItems",
+                "ProductItemsGender": {
+                    "name": "ProductItemsGender",
                     "isArray": true,
                     "type": {
                         "model": "ProductItem"
@@ -314,5 +314,5 @@ export const schema = {
     },
     "enums": {},
     "nonModels": {},
-    "version": "83ed743a43ab2de210805a772b9cae64"
+    "version": "74944fadc6e2fcee616d819a0688d4e5"
 };

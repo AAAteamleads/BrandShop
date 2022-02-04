@@ -11,6 +11,7 @@
     },
     "dependencies": {
         "@aws-amplify/cli": "^7.6.13",
+        "@aws-amplify/ui-vue": "^2.0.11",
         "@fortawesome/fontawesome-svg-core": "^1.2.36",
         "@fortawesome/free-brands-svg-icons": "^5.15.4",
         "@fortawesome/free-solid-svg-icons": "^5.15.4",
@@ -19,6 +20,7 @@
         "axios": "^0.25.0",
         "chokidar": "^3.5.3",
         "core-js": "^3.6.5",
+        "moment": "^2.29.1",
         "node-sass": "^6.0.1",
         "vue": "^3.0.0",
         "vuex": "^4.0.2"

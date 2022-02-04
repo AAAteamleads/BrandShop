@@ -1,0 +1,28 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-brandshop-staging-180610-authRole",
+      "UnauthRoleArn": "arn:aws:iam::561661730108:role/amplify-brandshop-staging-180610-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::561661730108:role/amplify-brandshop-staging-180610-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-brandshop-staging-180610-deployment",
+      "UnauthRoleName": "amplify-brandshop-staging-180610-unauthRole",
+      "StackName": "amplify-brandshop-staging-180610",
+      "StackId": "arn:aws:cloudformation:eu-central-1:561661730108:stack/amplify-brandshop-staging-180610/f78ac240-851b-11ec-a9c7-0a250e86a2c6",
+      "AmplifyAppId": "d2w4j8atdy9wba"
+    }
+  },
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-brandshop-dev-201347-authRole",
+      "UnauthRoleArn": "arn:aws:iam::561661730108:role/amplify-brandshop-dev-201347-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::561661730108:role/amplify-brandshop-dev-201347-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-brandshop-dev-201347-deployment",
+      "UnauthRoleName": "amplify-brandshop-dev-201347-unauthRole",
+      "StackName": "amplify-brandshop-dev-201347",
+      "StackId": "arn:aws:cloudformation:eu-central-1:561661730108:stack/amplify-brandshop-dev-201347/c47d0310-8514-11ec-87a1-0a1a92b500c4",
+      "AmplifyAppId": "d2w4j8atdy9wba"
+    }
+  }
+}
