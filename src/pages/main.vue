@@ -1,11 +1,11 @@
 <template>
-  <theHeader />
+  <!-- <theHeader /> -->
   <div class="wrapper">
       <main class="main">
 
          <section class="preview">
             <div class="preview__inner">
-               <video class="preview__video" src="media/Time_Lapse.mp4" autoplay muted loop></video>
+               <!-- <video class="preview__video" src="media/Time_Lapse.mp4" autoplay muted loop></video> -->
                <div class="preview__content container">
                   <div class="preview__img">
                   </div>
@@ -59,10 +59,10 @@
                   <div class="products__items">
                      <article class="products__item">
                         <div class="products__img">
-                           <img class="products__img-card" src="img/fe-card-1.jpg" alt="product">
+                           <img class="products__img-card" :src="require('@/assets/img/fe-card-1.jpg')" alt="product">
                            <div class="products__overlay">
                               <button class="products__btn">
-                                 <img class="products__icon-cart" src="img/icon-cart.svg" alt="icon-cart">Add to Cart
+                                 <img class="products__icon-cart" :src="require('@/assets/img/icon-cart.svg')"  alt="icon-cart">Add to Cart
                               </button>
                            </div>
                         </div>
@@ -78,10 +78,10 @@
                      </article>
                      <article class="products__item">
                         <div class="products__img">
-                           <img class="products__img-card" src="img/fe-card-2.jpg" alt="product">
+                           <img class="products__img-card" :src="require('@/assets/img/fe-card-2.jpg')" alt="product">
                            <div class="products__overlay">
                               <button class="products__btn">
-                                 <img class="products__icon-cart" src="img/icon-cart.svg" alt="icon-cart">Add to Cart
+                                 <img class="products__icon-cart" :src="require('@/assets/img/icon-cart.svg')" alt="icon-cart">Add to Cart
                               </button>
                            </div>
                         </div>
@@ -97,10 +97,10 @@
                      </article>
                      <article class="products__item">
                         <div class="products__img">
-                           <img class="products__img-card" src="img/fe-card-3.jpg" alt="product">
+                           <img class="products__img-card" :src="require('@/assets/img/fe-card-3.jpg')" alt="product">
                            <div class="products__overlay">
                               <button class="products__btn">
-                                 <img class="products__icon-cart" src="img/icon-cart.svg" alt="icon-cart">Add to Cart
+                                 <img class="products__icon-cart" :src="require('@/assets/img/icon-cart.svg')" alt="icon-cart">Add to Cart
                               </button>
                            </div>
                         </div>
@@ -116,10 +116,10 @@
                      </article>
                      <article class="products__item">
                         <div class="products__img">
-                           <img class="products__img-card" src="img/fe-card-4.jpg" alt="product">
+                           <img class="products__img-card" :src="require('@/assets/img/fe-card-4.jpg')" alt="product">
                            <div class="products__overlay">
                               <button class="products__btn">
-                                 <img class="products__icon-cart" src="img/icon-cart.svg" alt="icon-cart">Add to Cart
+                                 <img class="products__icon-cart" :src="require('@/assets/img/icon-cart.svg')" alt="icon-cart">Add to Cart
                               </button>
                            </div>
                         </div>
@@ -135,10 +135,10 @@
                      </article>
                      <article class="products__item">
                         <div class="products__img">
-                           <img class="products__img-card" src="img/fe-card-5.jpg" alt="product">
+                           <img class="products__img-card" :src="require('@/assets/img/fe-card-5.jpg')" alt="product">
                            <div class="products__overlay">
                               <button class="products__btn">
-                                 <img class="products__icon-cart" src="img/icon-cart.svg" alt="icon-cart">Add to Cart
+                                 <img class="products__icon-cart" :src="require('@/assets/img/icon-cart.svg')" alt="icon-cart">Add to Cart
                               </button>
                            </div>
                         </div>
@@ -154,10 +154,10 @@
                      </article>
                      <article class="products__item">
                         <div class="products__img">
-                           <img class="products__img-card" src="img/fe-card-6.jpg" alt="product">
+                           <img class="products__img-card" :src="require('@/assets/img/fe-card-6.jpg')" alt="product">
                            <div class="products__overlay">
                               <button class="products__btn">
-                                 <img class="products__icon-cart" src="img/icon-cart.svg" alt="icon-cart">Add to Cart
+                                 <img class="products__icon-cart" :src="require('@/assets/img/icon-cart.svg')" alt="icon-cart">Add to Cart
                               </button>
                            </div>
                         </div>
@@ -172,66 +172,34 @@
                         </div>
                      </article>
                   </div>
-                  <a class="product-info__link--white btn product-info__btn product-info__btn--white-text"
-                     href="catalog.html">Browse All Product</a>
+                  <a @click="handleClickProduct" class="product-info__link--white btn product-info__btn product-info__btn--white-text">Browse All Product</a>
                </div>
             </div>
          </section>
-         <section class="feature">
-            <div class="feature__inner">
-               <div class="container">
-                  <div class="feature__items">
-                     <figure class="feature__item">
-                        <img class="feature__img" src="img/icon-1.svg" alt="icon">
-                        <figcaption>
-                           <h4 class="feature__title">Free Delivery</h4>
-                           <p class="feature__desc">Worldwide delivery on all. Authorit tively morph next-generation
-                              innov
-                              tion
-                              with
-                              extensive models.</p>
-                        </figcaption>
-                     </figure>
-                     <figure class="feature__item">
-                        <img class="feature__img" src="img/icon-2.svg" alt="icon">
-                        <figcaption>
-                           <h4 class="feature__title">Sales & discounts</h4>
-                           <p class="feature__desc">Worldwide delivery on all. Authorit tively morph next-generation
-                              innov
-                              tion
-                              with
-                              extensive models.</p>
-                        </figcaption>
-                     </figure>
-                     <figure class="feature__item">
-                        <img class="feature__img" src="img/icon-3.svg" alt="icon">
-                        <figcaption>
-                           <h4 class="feature__title">Quality assurance</h4>
-                           <p class="feature__desc">Worldwide delivery on all. Authorit tively morph next-generation
-                              innov
-                              tion
-                              with
-                              extensive models.</p>
-                        </figcaption>
-                     </figure>
-                  </div>
-               </div>
-            </div>
-         </section>
+         <the-features />
       </main>
    </div>
-   <the-footer />
    <div class="callback">
       <i class="callback__phone fas fa-phone"></i>
    </div>
 </template>
 
 <script>
-  import theHeader from '../components/theHeader.vue'
-  import theFooter from '../components/theFooter.vue'
+import theFeatures from '../components/theFeatures.vue'
+//   import theHeader from '../components/theHeader.vue'
+//   import theFooter from '../components/theFooter.vue'
 export default {
   name: 'mainPage',
-  components: { theHeader, theFooter }
+//   components: { theHeader, theFooter }
+components: {
+   theFeatures
+},
+methods: {
+    handleClickProduct () {
+      console.log('Переход на Product')
+      this.$router.push({name: 'product'})
+    },
+  }
 }
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-  <theHeader />
+  <!-- <theHeader /> -->
   <div class="wrapper">
       <main class="main">
          <section class="breadcrumb">
@@ -15,7 +15,7 @@
                   <div class="product-cart__cards">
                      <div class="product-cart__card-wrap">
                         <div class="product-cart__card">
-                           <img class="product-cart__img" width="262" height="306" src="img/fe-card-3.jpg"
+                           <img class="product-cart__img" width="262" height="306" :src="require('@/assets/img/fe-card-3.jpg')"
                               alt="img-cart">
                            <div class="product-cart__right-side">
                               <div class="product-cart__name-wrap">
@@ -46,7 +46,7 @@
                            </div>
                         </div>
                         <div class="product-cart__card">
-                           <img class="product-cart__img" width="262" height="306" src="img/fe-card-7.jpg"
+                           <img class="product-cart__img" width="262" height="306" :src="require('@/assets/img/fe-card-7.jpg')"
                               alt="img-cart">
                            <div class="product-cart__right-side">
                               <div class="product-cart__name-wrap">
@@ -106,7 +106,7 @@
          </section>
       </main>
    </div>
-   <theFooter />
+   <!-- <theFooter /> -->
    <div class="callback">
       <i class="callback__phone fas fa-phone"></i>
    </div>
@@ -114,12 +114,12 @@
 </template>
 
 <script>
-  import theHeader from '../components/theHeader.vue'
-  import theFooter from '../components/theFooter.vue'
+//   import theHeader from '../components/theHeader.vue'
+//   import theFooter from '../components/theFooter.vue'
 
 export default {
   name: 'pageCart',
-  components: { theHeader, theFooter }
+//   components: { theHeader, theFooter }
 }
 </script>
 
