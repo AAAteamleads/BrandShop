@@ -1,6 +1,7 @@
 <template>
   <div>
     <the-header />
+    <router-view />
     <the-catalog />
     <the-footer />
   </div>

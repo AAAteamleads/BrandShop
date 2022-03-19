@@ -7,8 +7,7 @@
                   <div class="products__items">
                      <catalog-item></catalog-item>
                   </div>
-                  <a class="product-info__link--white btn product-info__btn product-info__btn--white-text"
-                     href="catalog.html">Browse All Product</a>
+                  <a @click="handleClickCatalog" class="product-info__link--white btn product-info__btn product-info__btn--white-text">Browse All Product</a>
                </div>
             </div>
          </section>
@@ -20,6 +19,12 @@ export default {
   components: {
    
     CatalogItem
+  },
+  methods: {
+    handleClickCatalog () {
+      console.log('Переход на Catalog')
+      this.$router.push({name: 'catalog'})
+    },
   }
 }
 </script>

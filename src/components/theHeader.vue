@@ -1,5 +1,5 @@
 <template>
-          <header class="header">
+          <header class="header">             
          <nav class="header__menu-content">
             <img class="header__close" :src="require('@/assets/img/close.svg')" alt="close">
             <p class="header__title">MENU</p>
@@ -32,7 +32,7 @@
             <div class="container">
                <div class="header__topline">
                   <div class="header__topline-left">
-                     <a class="logo" href="index.html">
+                     <a @click="handleClickMain" class="logo">
                         <img class="header__logo" :src="require('@/assets/img/logo.svg')" alt="logo">
                      </a>
                      <button class="header__search-btn">
@@ -41,16 +41,19 @@
                         <input class="header__search-field" type="search" placeholder="Search....">
                      </form>
                   </div>
+                  <nav class="header__topline-center">
+                  </nav>
                   <div class="header__topline-right">
                      <button class="header__menu">
                         <span class="header__menu-line"></span>
                         <span class="header__menu-line"></span>
                         <span class="header__menu-line"></span>
                      </button>
-                     <a class="header__topline-right-link" href="registration.html">
+                     <a @click="handleClickRegistration" class="header__topline-right-link">
                         <img class="header__topline-img" :src="require('@/assets/img/social.svg')" alt="social">
                      </a>
-                     <a class="header__topline-right-link" href="cart.html">
+                     <a @click="handleClickCart" class="header__topline-right-link"
+                        >
                         <img :src="require('@/assets/img/cart.svg')" alt="cart" class="cart">
                         <div class="header__topline-right-count">0</div>
                      </a>
@@ -62,7 +65,24 @@
       </header>
 </template>
 
-<script></script>
+<script>
+export default {
+   methods: {
+    handleClickCart () {
+      console.log('Переход на cart')
+      this.$router.push({name: 'cart'})
+    },
+     handleClickRegistration () {
+      console.log('Переход на registration')
+      this.$router.push({name: 'registration'})
+    },
+    handleClickMain () {
+      console.log('Переход на main')
+      this.$router.push({name: 'main'})
+    },
+  }
+}
+</script>
 <style scoped>
 
 </style>

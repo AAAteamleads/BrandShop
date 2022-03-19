@@ -1,3 +1,7 @@
+nav a {
+   color: $body;
+}
+
 summary {
    display: block;
    @include media("max", "xs") {

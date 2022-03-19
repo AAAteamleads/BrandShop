@@ -1,5 +1,5 @@
 <template>
-  <theHeader />
+  <!-- <theHeader /> -->
   <div class="wrapper">
       
       <main class="main">
@@ -51,18 +51,18 @@
          </section>
       </main>
    </div>
-   <the-footer />
+   <!-- <the-footer /> -->
    <div class="callback">
       <i class="callback__phone fas fa-phone"></i>
    </div>
 </template>
 
 <script>
-  import theHeader from '../components/theHeader.vue'
-  import theFooter from '../components/theFooter.vue'
+//   import theHeader from '../components/theHeader.vue'
+//   import theFooter from '../components/theFooter.vue'
 export default {
   name: 'pageRegistration',
-  components: { theHeader, theFooter }
+//   components: { theHeader, theFooter }
 }
 </script>
 

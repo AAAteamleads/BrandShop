@@ -17,7 +17,6 @@
       align-items: center;
       margin: 0 auto;
    }
-
    &__topline-left {
       display: flex;
       align-items: center;
@@ -27,11 +26,13 @@
       transform: rotateY(180deg) rotateZ(180deg);
       transform-origin: 50% 50% 0px;
       animation: T-animation 3s linear infinite normal;
+      cursor: pointer;
    }
 
    &__topline-right-link {
       margin-left: 33px;
       position: relative;
+      cursor: pointer;
       @include media("max", "xs") {
          display: none;
       }
