@@ -9,7 +9,7 @@ const routes = [
 	{
 		path: '/cart',
 		name: 'cart',
-		component: () => import(/* webpackChunkName: "about" */ '../pages/cart'),
+		component: () => import(/* webpackChunkName: "cart" */ '../pages/cart'),
 	},
 	{
 		path: '/registration',
@@ -21,13 +21,13 @@ const routes = [
 		path: '/catalog',
 		name: 'catalog',
 		component: () =>
-			import(/* webpackChunkName: "registration" */ '../pages/catalog'),
+			import(/* webpackChunkName: "catalog" */ '../pages/catalog'),
 	},
 	{
 		path: '/product',
 		name: 'product',
 		component: () =>
-			import(/* webpackChunkName: "registration" */ '../pages/product'),
+			import(/* webpackChunkName: "product" */ '../pages/product'),
 	},
 ]
 
